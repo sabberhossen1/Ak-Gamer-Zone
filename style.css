@@ -60,37 +60,39 @@ nav ul li {
 /* header section end */
 
 /* got section start */
-.got-main-two{
+.got-main-two {
     max-width: 1140px;
     margin: 0 auto;
-   
+
     display: flex;
 
-    
-    
+
+
 }
-.got-main{
+
+.got-main {
     justify-content: center;
     background-image: url(./images/Group\ 14.png);
-    background-position:left;
+    background-position: left;
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size: contain;
     box-shadow: 0 -6px 15px -10px #d6d2d2;
 }
-.got-extra{
+
+.got-extra {
     width: 50%;
     display: flex;
     align-items: center;
-    
-    
+
+
 }
 
 .got-info {
     /* width: 50%; */
-    
-    
 
-    
+
+
+
 }
 
 
@@ -118,22 +120,25 @@ nav ul li {
     font-size: 5rem;
     margin-bottom: 24px;
 }
-.got-li li{
+
+.got-li li {
     color: #534C64;
     font-size: 20px;
     list-style: none;
     margin-bottom: 17px;
 }
-.got-btn .ne{
- color: white;
- background-color: #FF42A5;
- border: none;
- border-radius: 48px;
- padding: 21px 40px;
- font-size: 1rem;
- font-weight: 600;
+
+.got-btn .ne {
+    color: white;
+    background-color: #FF42A5;
+    border: none;
+    border-radius: 48px;
+    padding: 21px 40px;
+    font-size: 1rem;
+    font-weight: 600;
 }
-.got-btn .wo{
+
+.got-btn .wo {
     color: white;
     background-color: #4EC5F7;
     border: none;
@@ -142,17 +147,154 @@ nav ul li {
     font-size: 1rem;
     font-weight: 600;
 }
-.got-btn{
-    display:flex;
+
+.got-btn {
+    display: flex;
     gap: 10px;
     margin-top: 3rem;
 }
-.got{
+
+.got {
     color: #FF42A5;
     margin-right: 10px;
 }
 
 /* got section end */
+
+/* online game start */
+.online-game-main {
+    max-width: 1140px;
+    margin: 120px auto;
+}
+
+.online-game-main h3 {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.online-game-main h3 span {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.online-game-main> p {
+    text-align: center;
+    color: #534C64;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 3rem;
+
+}
+.online-game-box{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 24px;
+    flex: 1;
+    
+}
+.online-img{
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+.online-p{
+    color: #534C64;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+}
+.image{
+    position: relative;
+}
+img{
+    width: 100%;
+    display: block;
+}
+.content{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+    
+}
+.content:hover{
+    opacity: 1;
+}
+.content .iii{
+    font-size: 1rem;
+    color: aliceblue;
+    margin-bottom: 10px;
+    
+}
+.content p{
+    font-size: 1rem;
+    color: #FF42A5;
+}
+
+
+/* online game end */
+
+
+/* play section start */
+.play-main{
+    max-width: 1140px;
+    margin: 120px auto;
+    display: flex;
+}
+.play-info h1{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+.play-info{
+    width: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.play-info p{
+    text-align: center;
+    color: #534C64;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+}
+.play-img{
+    width: 50%;
+    position: relative;
+}
+.play-img .gura{
+    width: 100%;
+   
+    
+}
+.tom{
+width: 40%;
+height: 40%;
+position: absolute;
+top:420px;
+bottom: 0;
+left: -90px;
+
+}
+.play-instantly{
+    color: #F948B2;
+}
+/* play section end */
 
 
 
@@ -179,20 +321,41 @@ nav ul li {
         justify-content: center;
         margin-bottom: 20px;
     }
-    .got-main-two{
+
+    .got-main-two {
         flex-direction: column-reverse;
     }
-    .got-extra{
+
+    .got-extra {
         width: 100%;
         justify-content: center;
-        
+
     }
-    .got-main{
-       background-position: bottom;
-       
+
+    .got-main {
+        background-position: bottom;
+
     }
-    .got-img{
+
+    .got-img {
         width: 100%;
         margin-bottom: 20px;
+    }
+    .online-game-box{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .play-main{
+        flex-direction: column;
+    }
+    .play-info{
+        width: 100%;
+    }
+    .play-img{
+        width: 60%;
+        margin:20px auto;
+    }
+    .tom{
+        top: 200px;
+        left: -50px;
     }
 }
