@@ -1,52 +1,158 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     font-family: 'Work Sans', sans-serif;
 }
+
 /* header section start */
-header{
+header {
     max-width: 1140px;
     margin: 0 auto;
-    padding:40px 0px;
-    
+    padding: 40px 0px;
+
 }
-.logo{
+
+.logo {
     display: flex;
     gap: 20px;
     align-items: center;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
 }
-nav ul{
+
+nav ul {
     display: flex;
     gap: 32px;
     align-items: center;
-    
+
 }
-nav ul li{
+
+nav ul li {
     list-style: none;
 }
-.gamer{
+
+.gamer {
     font-size: 3rem;
     font-weight: 700;
 }
-.gamer-g{
+
+.gamer-g {
     color: #FF42A5;
 }
-.follow{
+
+.follow {
     padding: 1rem 1.5rem;
     border-radius: 8px;
-background: rgba(11, 2, 35, 0.10);
+    background: rgba(11, 2, 35, 0.10);
 }
-#youtube{
+
+#youtube {
     color: red;
     margin: 0 15px;
 }
+
 /* header section end */
+
+/* got section start */
+.got-main-two{
+    max-width: 1140px;
+    margin: 0 auto;
+   
+    display: flex;
+
+    
+    
+}
+.got-main{
+    justify-content: center;
+    background-image: url(./images/Group\ 14.png);
+    background-position:left;
+    background-repeat: no-repeat;
+    background-size:contain;
+    box-shadow: 0 -6px 15px -10px #d6d2d2;
+}
+.got-extra{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+.got-info {
+    /* width: 50%; */
+    
+    
+
+    
+}
+
+
+.got-img {
+    width: 50%;
+}
+
+.got-img img {
+    width: 100%;
+}
+
+.play {
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.gt {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    /* -webkit-background-clip: text; */
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-size: 5rem;
+    margin-bottom: 24px;
+}
+.got-li li{
+    color: #534C64;
+    font-size: 20px;
+    list-style: none;
+    margin-bottom: 17px;
+}
+.got-btn .ne{
+ color: white;
+ background-color: #FF42A5;
+ border: none;
+ border-radius: 48px;
+ padding: 21px 40px;
+ font-size: 1rem;
+ font-weight: 600;
+}
+.got-btn .wo{
+    color: white;
+    background-color: #4EC5F7;
+    border: none;
+    border-radius: 48px;
+    padding: 21px 40px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.got-btn{
+    display:flex;
+    gap: 10px;
+    margin-top: 3rem;
+}
+.got{
+    color: #FF42A5;
+    margin-right: 10px;
+}
+
+/* got section end */
 
 
 
@@ -59,16 +165,34 @@ background: rgba(11, 2, 35, 0.10);
 
 
 /* mobile device  */
-@media screen and (max-width:576px){
-    nav{
+@media screen and (max-width:576px) {
+    nav {
         flex-direction: column;
+
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
+    .logo {
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .got-main-two{
+        flex-direction: column-reverse;
+    }
+    .got-extra{
+        width: 100%;
+        justify-content: center;
         
     }
-    nav ul{
-        flex-direction: column;
+    .got-main{
+       background-position: bottom;
+       
     }
-    .logo{
-        justify-content: center;
+    .got-img{
+        width: 100%;
         margin-bottom: 20px;
     }
 }
